@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Disney Plus - Clone</title>
 </head>
+
 <body>
     <div class="background-fixed"></div>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" data-header>
             <div class="logo">
                 <a class="logo__link" href="#"></a>
             </div>
@@ -53,10 +55,10 @@
                         </a>
                     </li>
                     <li class="nav-menu__item dropdown">
-                        <a class="nav-menu__link" href="#">
+                        <a class="nav-menu__link" href="#" data-open-navsubmenu>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </a>
-                        <ul class="nav-submenu">
+                        <ul class="nav-submenu" data-navsubmenu>
                             <li class="nav-submenu__item mobile-hidden">
                                 <a class="nav-submenu__link" href="#">
                                     <i class="fa-solid fa-star"></i>
@@ -79,36 +81,36 @@
                     </li>
                 </ul>
 
-                <div class="user-menu">
+                <div class="user-menu" data-usermenu>
                     <div class="user-menu__background show-hover"></div>
-                    <div class="user-menu__current-profile">
+                    <div class="user-menu__current-profile" data-open-usermenu>
                         <div class="user-profile user-profile--reverse">
-                            <img class="user-profile__avatar" src="./assets/imgs/avatar.png" alt="" >
+                            <img class="user-profile__avatar" src="./assets/imgs/avatar.png" alt="" />
                             <span class="user-profile__title">Jonas</span>
                         </div>
                     </div>
                     <ul class="user-menu__profiles show-hover">
                         <li class="user-menu__item">
                             <div class="user-profile">
-                                <img class="user-profile__avatar" src="./assets/imgs/avatar.png" alt="" >
+                                <img class="user-profile__avatar" src="./assets/imgs/avatar.png" alt="" />
                                 <span class="user-profile__title">Felipe</span>
                             </div>
                         </li>
                         <li class="user-menu__item">
                             <div class="user-profile">
-                                <img class="user-profile__avatar" src="./assets/imgs/avatar.png" alt="" >
+                                <img class="user-profile__avatar" src="./assets/imgs/avatar.png" alt="" />
                                 <span class="user-profile__title">Chloe</span>
                             </div>
                         </li>
                         <li class="user-menu__item">
                             <div class="user-profile">
-                                <img class="user-profile__avatar" src="./assets/imgs/avatar.png" alt="" >
+                                <img class="user-profile__avatar" src="./assets/imgs/avatar.png" alt="" />
                                 <span class="user-profile__title">Iara</span>
                             </div>
                         </li>
                         <li class="user-menu__item">
                             <div class="user-profile">
-                                <img class="user-profile__avatar" src="./assets/imgs/avatar.png" alt="" >
+                                <img class="user-profile__avatar" src="./assets/imgs/avatar.png" alt="" />
                                 <span class="user-profile__title">Rafael</span>
                             </div>
                         </li>
@@ -130,10 +132,10 @@
                             <a class="user-menu__link" href="#">Sair</a>
                         </li>
                     </ul>
-                    </div>
                 </div>
             </nav>
         </header>
     </div>
+    <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
